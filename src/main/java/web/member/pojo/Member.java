@@ -12,9 +12,9 @@ import javax.persistence.Id;
 import core.pojo.Core;
 @Entity
 public class Member extends Core {
+//	private static final long serialVersionUID = 1062017833925367218L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private static final long serialVersionUID = 1062017833925367218L;
 	private Integer id;
 	private String username;
 	private String password;
@@ -23,10 +23,10 @@ public class Member extends Core {
 	@Column(name = "ROLE_ID")
 	private Integer roleId;
 	private String creator;
-	@Column(name = "CREATE_DATE")
+	@Column(name = "CREATED_DATE")
 	private Timestamp createdDate;
 	private String updater;
-	@Column(name = "LAST_UPDATE_DATE")
+	@Column(name = "LAST_UPDATED_DATE")
 	private Timestamp lastUpdatedDate;
 
 	public Member() {
